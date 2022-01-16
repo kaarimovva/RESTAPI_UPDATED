@@ -1,0 +1,23 @@
+Mandatory sequence of the procces is following:
+1) Create a user  (create_user) : ID is uniqe for everyone,
+you must enter your own unique ID (like passport ID and so on). 
+NOTE* Remamber which password you have gave.You will need for later
+2) Go "LOGIN" > Enter your id and password>get your JWT (Token) 
+for further proccess.
+3)Try to access whetever you want with that token. 
+DO NOT FORGET to input you token whenever you are
+accessing any of the application
+
+*All requests are in API Postman Collection with examples
+
+*Examples in post man collection are ready to run and insert 
+these info to database. Based on those examples, you can create new 
+requests if you wish.
+
+*While you are accessing any request, "Token" part has been left for you
+to insert your given token after creating user and login.
+
+*It is reccomended to sent request as its order in Postman collection,like :
+>>Create User >>Login with created user >> Read facility 
+>> Search facility >> Update facility >>Create facility >> Delete facility
+else it can cause error in case of all examples are ready to run with one click.

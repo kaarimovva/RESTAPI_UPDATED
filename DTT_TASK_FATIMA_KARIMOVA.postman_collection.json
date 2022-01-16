@@ -1,0 +1,801 @@
+{
+	"info": {
+		"_postman_id": "85052f16-28d8-487b-aa6b-d29809455f35",
+		"name": "DTT_TASK_FATIMA_KARIMOVA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CREATE USER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"055\",\r\n    \"name\":\"Fatima Karimova\",\r\n    \"password\":\"3868\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/DTT_TASK_FATIMA_KARIMOVA/TASK/api_token/objects/eligible_user.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"DTT_TASK_FATIMA_KARIMOVA",
+						"TASK",
+						"api_token",
+						"objects",
+						"eligible_user.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CREATE USER 2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"456-369\",\r\n    \"name\":\"Tom Kelly\",\r\n    \"password\":\"USER679@\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/DTT_TASK_FATIMA_KARIMOVA/TASK/api_token/objects/eligible_user.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"DTT_TASK_FATIMA_KARIMOVA",
+								"TASK",
+								"api_token",
+								"objects",
+								"eligible_user.php"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "CREATE USER 3",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"987654-6543\",\r\n    \"name\":\"Shrek Thomas\",\r\n    \"password\":\"098765%\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/DTT_TASK_FATIMA_KARIMOVA/TASK/api_token/objects/eligible_user.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"DTT_TASK_FATIMA_KARIMOVA",
+								"TASK",
+								"api_token",
+								"objects",
+								"eligible_user.php"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/DTT_TASK_FATIMA_KARIMOVA/TASK/api_token/objects/login.php?id=055&password=3868",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"DTT_TASK_FATIMA_KARIMOVA",
+						"TASK",
+						"api_token",
+						"objects",
+						"login.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "055"
+						},
+						{
+							"key": "password",
+							"value": "3868"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "LOGIN 2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/DTT_TASK_FATIMA_KARIMOVA/TASK/api_token/objects/login.php?id=456-369&password=USER679@",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"DTT_TASK_FATIMA_KARIMOVA",
+								"TASK",
+								"api_token",
+								"objects",
+								"login.php"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "456-369"
+								},
+								{
+									"key": "password",
+									"value": "USER679@"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "LOGIN 3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/DTT_TASK_FATIMA_KARIMOVA/TASK/api_token/objects/login.php?id=055&password=3868",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"DTT_TASK_FATIMA_KARIMOVA",
+								"TASK",
+								"api_token",
+								"objects",
+								"login.php"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "055"
+								},
+								{
+									"key": "password",
+									"value": "3868"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "READ_ONE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/DTT_TASK_FATIMA_KARIMOVA/TASK/api_token/product/read_one.php?FacName=Dinner&TagName=Steak&Token=ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBZWFFpT2pFMk5ESXpOREV5TURJc0ltVjRjQ0k2TVRZME1qTTBORGd3TWl3aWFYTnpJam9pYUhSMGNEb3ZMMnh2WTJGc2FHOXpkQzloY0dsZmRHOXJaVzRpTENKa1lYUmhJanA3SW1sa0lqb2lNRFUxSWl3aWJtRnRaU0k2SWtaaGRHbHRZU0JMWVhKcGJXOTJZU0o5ZlEuTzN3OXhFZnM2bzJPWVlwalJTZUktREJDYzFYNzkwY1RGSzdCM3I4YVdjSQ==",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"DTT_TASK_FATIMA_KARIMOVA",
+						"TASK",
+						"api_token",
+						"product",
+						"read_one.php"
+					],
+					"query": [
+						{
+							"key": "FacName",
+							"value": "Dinner"
+						},
+						{
+							"key": "TagName",
+							"value": "Steak"
+						},
+						{
+							"key": "Token",
+							"value": "ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBZWFFpT2pFMk5ESXpOREV5TURJc0ltVjRjQ0k2TVRZME1qTTBORGd3TWl3aWFYTnpJam9pYUhSMGNEb3ZMMnh2WTJGc2FHOXpkQzloY0dsZmRHOXJaVzRpTENKa1lYUmhJanA3SW1sa0lqb2lNRFUxSWl3aWJtRnRaU0k2SWtaaGRHbHRZU0JMWVhKcGJXOTJZU0o5ZlEuTzN3OXhFZnM2bzJPWVlwalJTZUktREJDYzFYNzkwY1RGSzdCM3I4YVdjSQ=="
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "READ_ONE 2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/DTT_TASK_FATIMA_KARIMOVA/TASK/api_token/product/read_one.php?FacName=Breakfast&TagName=Egg&Token=ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBZWFFpT2pFMk5ESXpOREV5TURJc0ltVjRjQ0k2TVRZME1qTTBORGd3TWl3aWFYTnpJam9pYUhSMGNEb3ZMMnh2WTJGc2FHOXpkQzloY0dsZmRHOXJaVzRpTENKa1lYUmhJanA3SW1sa0lqb2lNRFUxSWl3aWJtRnRaU0k2SWtaaGRHbHRZU0JMWVhKcGJXOTJZU0o5ZlEuTzN3OXhFZnM2bzJPWVlwalJTZUktREJDYzFYNzkwY1RGSzdCM3I4YVdjSQ==",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"DTT_TASK_FATIMA_KARIMOVA",
+								"TASK",
+								"api_token",
+								"product",
+								"read_one.php"
+							],
+							"query": [
+								{
+									"key": "FacName",
+									"value": "Breakfast"
+								},
+								{
+									"key": "TagName",
+									"value": "Egg"
+								},
+								{
+									"key": "Token",
+									"value": "ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBZWFFpT2pFMk5ESXpOREV5TURJc0ltVjRjQ0k2TVRZME1qTTBORGd3TWl3aWFYTnpJam9pYUhSMGNEb3ZMMnh2WTJGc2FHOXpkQzloY0dsZmRHOXJaVzRpTENKa1lYUmhJanA3SW1sa0lqb2lNRFUxSWl3aWJtRnRaU0k2SWtaaGRHbHRZU0JMWVhKcGJXOTJZU0o5ZlEuTzN3OXhFZnM2bzJPWVlwalJTZUktREJDYzFYNzkwY1RGSzdCM3I4YVdjSQ=="
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "READ_ONE 3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/DTT_TASK_FATIMA_KARIMOVA/TASK/api_token/product/read_one.php?FacName=Plant Based&TagName=LENTIL VEGETABLE SOUP&Token=ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBZWFFpT2pFMk5ESXpOREV5TURJc0ltVjRjQ0k2TVRZME1qTTBORGd3TWl3aWFYTnpJam9pYUhSMGNEb3ZMMnh2WTJGc2FHOXpkQzloY0dsZmRHOXJaVzRpTENKa1lYUmhJanA3SW1sa0lqb2lNRFUxSWl3aWJtRnRaU0k2SWtaaGRHbHRZU0JMWVhKcGJXOTJZU0o5ZlEuTzN3OXhFZnM2bzJPWVlwalJTZUktREJDYzFYNzkwY1RGSzdCM3I4YVdjSQ==",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"DTT_TASK_FATIMA_KARIMOVA",
+								"TASK",
+								"api_token",
+								"product",
+								"read_one.php"
+							],
+							"query": [
+								{
+									"key": "FacName",
+									"value": "Plant Based"
+								},
+								{
+									"key": "TagName",
+									"value": "LENTIL VEGETABLE SOUP"
+								},
+								{
+									"key": "Token",
+									"value": "ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBZWFFpT2pFMk5ESXpOREV5TURJc0ltVjRjQ0k2TVRZME1qTTBORGd3TWl3aWFYTnpJam9pYUhSMGNEb3ZMMnh2WTJGc2FHOXpkQzloY0dsZmRHOXJaVzRpTENKa1lYUmhJanA3SW1sa0lqb2lNRFUxSWl3aWJtRnRaU0k2SWtaaGRHbHRZU0JMWVhKcGJXOTJZU0o5ZlEuTzN3OXhFZnM2bzJPWVlwalJTZUktREJDYzFYNzkwY1RGSzdCM3I4YVdjSQ=="
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "SEARCH BY ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/DTT_TASK_FATIMA_KARIMOVA/TASK/api_token/product/search.php?FacName=Dinner&TagName=Beef Salad&LocCity=Brussels&Token=ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBZWFFpT2pFMk5ESXpOREV5TURJc0ltVjRjQ0k2TVRZME1qTTBORGd3TWl3aWFYTnpJam9pYUhSMGNEb3ZMMnh2WTJGc2FHOXpkQzloY0dsZmRHOXJaVzRpTENKa1lYUmhJanA3SW1sa0lqb2lNRFUxSWl3aWJtRnRaU0k2SWtaaGRHbHRZU0JMWVhKcGJXOTJZU0o5ZlEuTzN3OXhFZnM2bzJPWVlwalJTZUktREJDYzFYNzkwY1RGSzdCM3I4YVdjSQ==",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"DTT_TASK_FATIMA_KARIMOVA",
+						"TASK",
+						"api_token",
+						"product",
+						"search.php"
+					],
+					"query": [
+						{
+							"key": "FacName",
+							"value": "Dinner"
+						},
+						{
+							"key": "TagName",
+							"value": "Beef Salad"
+						},
+						{
+							"key": "LocCity",
+							"value": "Brussels"
+						},
+						{
+							"key": "Token",
+							"value": "ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBZWFFpT2pFMk5ESXpOREV5TURJc0ltVjRjQ0k2TVRZME1qTTBORGd3TWl3aWFYTnpJam9pYUhSMGNEb3ZMMnh2WTJGc2FHOXpkQzloY0dsZmRHOXJaVzRpTENKa1lYUmhJanA3SW1sa0lqb2lNRFUxSWl3aWJtRnRaU0k2SWtaaGRHbHRZU0JMWVhKcGJXOTJZU0o5ZlEuTzN3OXhFZnM2bzJPWVlwalJTZUktREJDYzFYNzkwY1RGSzdCM3I4YVdjSQ=="
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "SEARCH BY Facility Name",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/DTT_TASK_FATIMA_KARIMOVA/TASK/api_token/product/search.php?FacName=Dinner&Token=ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBZWFFpT2pFMk5ESXpOREV5TURJc0ltVjRjQ0k2TVRZME1qTTBORGd3TWl3aWFYTnpJam9pYUhSMGNEb3ZMMnh2WTJGc2FHOXpkQzloY0dsZmRHOXJaVzRpTENKa1lYUmhJanA3SW1sa0lqb2lNRFUxSWl3aWJtRnRaU0k2SWtaaGRHbHRZU0JMWVhKcGJXOTJZU0o5ZlEuTzN3OXhFZnM2bzJPWVlwalJTZUktREJDYzFYNzkwY1RGSzdCM3I4YVdjSQ==",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"DTT_TASK_FATIMA_KARIMOVA",
+								"TASK",
+								"api_token",
+								"product",
+								"search.php"
+							],
+							"query": [
+								{
+									"key": "FacName",
+									"value": "Dinner"
+								},
+								{
+									"key": "TagName",
+									"value": "Beef Salad",
+									"disabled": true
+								},
+								{
+									"key": "LocCity",
+									"value": "Brussels",
+									"disabled": true
+								},
+								{
+									"key": "Token",
+									"value": "ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBZWFFpT2pFMk5ESXpOREV5TURJc0ltVjRjQ0k2TVRZME1qTTBORGd3TWl3aWFYTnpJam9pYUhSMGNEb3ZMMnh2WTJGc2FHOXpkQzloY0dsZmRHOXJaVzRpTENKa1lYUmhJanA3SW1sa0lqb2lNRFUxSWl3aWJtRnRaU0k2SWtaaGRHbHRZU0JMWVhKcGJXOTJZU0o5ZlEuTzN3OXhFZnM2bzJPWVlwalJTZUktREJDYzFYNzkwY1RGSzdCM3I4YVdjSQ=="
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "SEARCH BY Tag Name",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/DTT_TASK_FATIMA_KARIMOVA/TASK/api_token/product/search.php?TagName=Beef Salad&Token=ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBZWFFpT2pFMk5ESXpOREV5TURJc0ltVjRjQ0k2TVRZME1qTTBORGd3TWl3aWFYTnpJam9pYUhSMGNEb3ZMMnh2WTJGc2FHOXpkQzloY0dsZmRHOXJaVzRpTENKa1lYUmhJanA3SW1sa0lqb2lNRFUxSWl3aWJtRnRaU0k2SWtaaGRHbHRZU0JMWVhKcGJXOTJZU0o5ZlEuTzN3OXhFZnM2bzJPWVlwalJTZUktREJDYzFYNzkwY1RGSzdCM3I4YVdjSQ==",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"DTT_TASK_FATIMA_KARIMOVA",
+								"TASK",
+								"api_token",
+								"product",
+								"search.php"
+							],
+							"query": [
+								{
+									"key": "FacName",
+									"value": "Dinner",
+									"disabled": true
+								},
+								{
+									"key": "TagName",
+									"value": "Beef Salad"
+								},
+								{
+									"key": "LocCity",
+									"value": "Brussels",
+									"disabled": true
+								},
+								{
+									"key": "Token",
+									"value": "ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBZWFFpT2pFMk5ESXpOREV5TURJc0ltVjRjQ0k2TVRZME1qTTBORGd3TWl3aWFYTnpJam9pYUhSMGNEb3ZMMnh2WTJGc2FHOXpkQzloY0dsZmRHOXJaVzRpTENKa1lYUmhJanA3SW1sa0lqb2lNRFUxSWl3aWJtRnRaU0k2SWtaaGRHbHRZU0JMWVhKcGJXOTJZU0o5ZlEuTzN3OXhFZnM2bzJPWVlwalJTZUktREJDYzFYNzkwY1RGSzdCM3I4YVdjSQ=="
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "SEARCH BY Location City",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/DTT_TASK_FATIMA_KARIMOVA/TASK/api_token/product/search.php?FacName=Dinner&TagName=Beef Salad&LocCity=Brussels&Token=ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBZWFFpT2pFMk5ESXpOREV5TURJc0ltVjRjQ0k2TVRZME1qTTBORGd3TWl3aWFYTnpJam9pYUhSMGNEb3ZMMnh2WTJGc2FHOXpkQzloY0dsZmRHOXJaVzRpTENKa1lYUmhJanA3SW1sa0lqb2lNRFUxSWl3aWJtRnRaU0k2SWtaaGRHbHRZU0JMWVhKcGJXOTJZU0o5ZlEuTzN3OXhFZnM2bzJPWVlwalJTZUktREJDYzFYNzkwY1RGSzdCM3I4YVdjSQ==",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"DTT_TASK_FATIMA_KARIMOVA",
+								"TASK",
+								"api_token",
+								"product",
+								"search.php"
+							],
+							"query": [
+								{
+									"key": "FacName",
+									"value": "Dinner"
+								},
+								{
+									"key": "TagName",
+									"value": "Beef Salad"
+								},
+								{
+									"key": "LocCity",
+									"value": "Brussels"
+								},
+								{
+									"key": "Token",
+									"value": "ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBZWFFpT2pFMk5ESXpOREV5TURJc0ltVjRjQ0k2TVRZME1qTTBORGd3TWl3aWFYTnpJam9pYUhSMGNEb3ZMMnh2WTJGc2FHOXpkQzloY0dsZmRHOXJaVzRpTENKa1lYUmhJanA3SW1sa0lqb2lNRFUxSWl3aWJtRnRaU0k2SWtaaGRHbHRZU0JMWVhKcGJXOTJZU0o5ZlEuTzN3OXhFZnM2bzJPWVlwalJTZUktREJDYzFYNzkwY1RGSzdCM3I4YVdjSQ=="
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "UPDATE Facility and its tag",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"New_FacName\": \"Breakfast AGAIN\",\r\n    \"FacName\": \"Breakfast New\",\r\n    \"Token\":\"ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBZWFFpT2pFMk5ESXpOREV5TURJc0ltVjRjQ0k2TVRZME1qTTBORGd3TWl3aWFYTnpJam9pYUhSMGNEb3ZMMnh2WTJGc2FHOXpkQzloY0dsZmRHOXJaVzRpTENKa1lYUmhJanA3SW1sa0lqb2lNRFUxSWl3aWJtRnRaU0k2SWtaaGRHbHRZU0JMWVhKcGJXOTJZU0o5ZlEuTzN3OXhFZnM2bzJPWVlwalJTZUktREJDYzFYNzkwY1RGSzdCM3I4YVdjSQ==\"\r\n    \r\n   \r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/DTT_TASK_FATIMA_KARIMOVA/TASK/api_token/product/update.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"DTT_TASK_FATIMA_KARIMOVA",
+						"TASK",
+						"api_token",
+						"product",
+						"update.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UPDATE Facility",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"New_FacName\": \"Breakfast New\",\r\n    \"FacName\": \"Breakfast\",\r\n    \"New_TagName\": \"Egg New\",\r\n    \"TagName\": \"Egg\",\r\n    \"Token\":\"ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBZWFFpT2pFMk5ESXpOREV5TURJc0ltVjRjQ0k2TVRZME1qTTBORGd3TWl3aWFYTnpJam9pYUhSMGNEb3ZMMnh2WTJGc2FHOXpkQzloY0dsZmRHOXJaVzRpTENKa1lYUmhJanA3SW1sa0lqb2lNRFUxSWl3aWJtRnRaU0k2SWtaaGRHbHRZU0JMWVhKcGJXOTJZU0o5ZlEuTzN3OXhFZnM2bzJPWVlwalJTZUktREJDYzFYNzkwY1RGSzdCM3I4YVdjSQ==\"\r\n    \r\n   \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/DTT_TASK_FATIMA_KARIMOVA/TASK/api_token/product/update.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"DTT_TASK_FATIMA_KARIMOVA",
+								"TASK",
+								"api_token",
+								"product",
+								"update.php"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "UPDATE Tag",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"New_TagName\": \"Egg AGAIN\",\r\n    \"TagName\": \"Egg New\",\r\n    \"Token\":\"ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBZWFFpT2pFMk5ESXpOREV5TURJc0ltVjRjQ0k2TVRZME1qTTBORGd3TWl3aWFYTnpJam9pYUhSMGNEb3ZMMnh2WTJGc2FHOXpkQzloY0dsZmRHOXJaVzRpTENKa1lYUmhJanA3SW1sa0lqb2lNRFUxSWl3aWJtRnRaU0k2SWtaaGRHbHRZU0JMWVhKcGJXOTJZU0o5ZlEuTzN3OXhFZnM2bzJPWVlwalJTZUktREJDYzFYNzkwY1RGSzdCM3I4YVdjSQ==\"\r\n    \r\n   \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/DTT_TASK_FATIMA_KARIMOVA/TASK/api_token/product/update.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"DTT_TASK_FATIMA_KARIMOVA",
+								"TASK",
+								"api_token",
+								"product",
+								"update.php"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "CREATE FACILITY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"FacName\":\"Lunch\",\r\n    \"TagName\":\"SALAD\",\r\n    \"LocCity\":\"LOS ANGELES\",\r\n    \"Token\":\"ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBZWFFpT2pFMk5ESXpOREV5TURJc0ltVjRjQ0k2TVRZME1qTTBORGd3TWl3aWFYTnpJam9pYUhSMGNEb3ZMMnh2WTJGc2FHOXpkQzloY0dsZmRHOXJaVzRpTENKa1lYUmhJanA3SW1sa0lqb2lNRFUxSWl3aWJtRnRaU0k2SWtaaGRHbHRZU0JMWVhKcGJXOTJZU0o5ZlEuTzN3OXhFZnM2bzJPWVlwalJTZUktREJDYzFYNzkwY1RGSzdCM3I4YVdjSQ==\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/DTT_TASK_FATIMA_KARIMOVA/TASK/api_token/product/create.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"DTT_TASK_FATIMA_KARIMOVA",
+						"TASK",
+						"api_token",
+						"product",
+						"create.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CREATE FACILITY 2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"FacName\":\"Side Dishes\",\r\n    \"TagName\":\"rice\",\r\n    \"LocCity\":\"Texas\",\r\n    \"Token\":\"ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBZWFFpT2pFMk5ESXpOREV5TURJc0ltVjRjQ0k2TVRZME1qTTBORGd3TWl3aWFYTnpJam9pYUhSMGNEb3ZMMnh2WTJGc2FHOXpkQzloY0dsZmRHOXJaVzRpTENKa1lYUmhJanA3SW1sa0lqb2lNRFUxSWl3aWJtRnRaU0k2SWtaaGRHbHRZU0JMWVhKcGJXOTJZU0o5ZlEuTzN3OXhFZnM2bzJPWVlwalJTZUktREJDYzFYNzkwY1RGSzdCM3I4YVdjSQ==\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/DTT_TASK_FATIMA_KARIMOVA/TASK/api_token/product/create.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"DTT_TASK_FATIMA_KARIMOVA",
+								"TASK",
+								"api_token",
+								"product",
+								"create.php"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "CREATE FACILITY 3",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"FacName\":\"Low Calories\",\r\n    \"TagName\":\"Water\",\r\n    \"LocCity\":\"Baku\",\r\n    \"Token\":\"ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBZWFFpT2pFMk5ESXpOREV5TURJc0ltVjRjQ0k2TVRZME1qTTBORGd3TWl3aWFYTnpJam9pYUhSMGNEb3ZMMnh2WTJGc2FHOXpkQzloY0dsZmRHOXJaVzRpTENKa1lYUmhJanA3SW1sa0lqb2lNRFUxSWl3aWJtRnRaU0k2SWtaaGRHbHRZU0JMWVhKcGJXOTJZU0o5ZlEuTzN3OXhFZnM2bzJPWVlwalJTZUktREJDYzFYNzkwY1RGSzdCM3I4YVdjSQ==\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/DTT_TASK_FATIMA_KARIMOVA/TASK/api_token/product/create.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"DTT_TASK_FATIMA_KARIMOVA",
+								"TASK",
+								"api_token",
+								"product",
+								"create.php"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "DELETE Facility ",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"FacName\":\"Lunch\",\r\n    \"Token\":\"ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBZWFFpT2pFMk5ESXpNemN3TkRnc0ltVjRjQ0k2TVRZME1qTTBNRFkwT0N3aWFYTnpJam9pYUhSMGNEb3ZMMnh2WTJGc2FHOXpkQzloY0dsZmRHOXJaVzRpTENKa1lYUmhJanA3SW1sa0lqb2lNVFFpTENKdVlXMWxJam9pUjNWc1lYSmxJbjE5LmdkY2UwLVhEOUt3TjE4WVp4bXBkN3dDNE1JTVJzSWUzbXY5eDVidTdpekE=\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/DTT_TASK_FATIMA_KARIMOVA/TASK/api_token/product/delete.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"DTT_TASK_FATIMA_KARIMOVA",
+						"TASK",
+						"api_token",
+						"product",
+						"delete.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DELETE Facility 2",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FacName\":\"Breakfast\",\r\n    \"Token\":\"ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBZWFFpT2pFMk5ESXpNemN3TkRnc0ltVjRjQ0k2TVRZME1qTTBNRFkwT0N3aWFYTnpJam9pYUhSMGNEb3ZMMnh2WTJGc2FHOXpkQzloY0dsZmRHOXJaVzRpTENKa1lYUmhJanA3SW1sa0lqb2lNVFFpTENKdVlXMWxJam9pUjNWc1lYSmxJbjE5LmdkY2UwLVhEOUt3TjE4WVp4bXBkN3dDNE1JTVJzSWUzbXY5eDVidTdpekE=\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/DTT_TASK_FATIMA_KARIMOVA/TASK/api_token/product/delete.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"DTT_TASK_FATIMA_KARIMOVA",
+								"TASK",
+								"api_token",
+								"product",
+								"delete.php"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "DELETE Facility 3",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FacName\":\"Lunch\",\r\n    \"Token\":\"ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBZWFFpT2pFMk5ESXpNemN3TkRnc0ltVjRjQ0k2TVRZME1qTTBNRFkwT0N3aWFYTnpJam9pYUhSMGNEb3ZMMnh2WTJGc2FHOXpkQzloY0dsZmRHOXJaVzRpTENKa1lYUmhJanA3SW1sa0lqb2lNVFFpTENKdVlXMWxJam9pUjNWc1lYSmxJbjE5LmdkY2UwLVhEOUt3TjE4WVp4bXBkN3dDNE1JTVJzSWUzbXY5eDVidTdpekE=\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/DTT_TASK_FATIMA_KARIMOVA/TASK/api_token/product/delete.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"DTT_TASK_FATIMA_KARIMOVA",
+								"TASK",
+								"api_token",
+								"product",
+								"delete.php"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
